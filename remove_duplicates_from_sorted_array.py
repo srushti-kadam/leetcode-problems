@@ -12,4 +12,14 @@ class Solution(object):
 
         return i + 1
 
+#another approach
+
+class Solution(object):
+    def removeDuplicates(self, nums):
+        nums[:] = sorted(set(nums))
+        return len(nums)
+
+
+
+
         
